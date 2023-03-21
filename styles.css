@@ -69,6 +69,7 @@
 
 .section-description {
     color: var(--description-color);
+    line-height: 1.5;
 }
 
 .introduction {
@@ -230,7 +231,7 @@
 }
 
 .become {
-    margin-bottom: 100px;
+    padding: 100px 0;
 }
 
 .become-img {
@@ -239,32 +240,34 @@
 }
 
 .become-courier {
-    background-color: var(--courier-bg); 
-    margin-right: 15px;
-    margin-top: 100px;
+    width: 600px;
+    background-color: var(--courier-bg);
     border-radius: 8px;
 }
 
 .become-partner {
+    width: 600px;
     background-color: var(--partner-bg);
-    margin-left: 15px;
-    margin-top: 100px;
     border-radius: 8px;
 }
 
 .become-content {
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   justify-content: center;
-   margin: 30px;
+    margin-left: 3rem;
+}
+
+.become-content > .section-description {
+    margin-bottom: 2rem;
+}
+
+.become-content > .btn {
+    display: block;
+    width: auto;
 }
 
 .restaurants-container {
     margin-top: 40px;
     flex-wrap: wrap;
     row-gap: 1.875rem;
-    
 }
 
 .restaurants-img {
