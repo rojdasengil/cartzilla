@@ -15,6 +15,8 @@
     --h2-color: 255, 255, 255;
     --browsing-bg: #fe696a;
     --dark-grey: #2B3445;
+    --btn-hover: #fe4042;
+    --app-button-hover: #212835;
 }
 
 ::selection {
@@ -109,6 +111,13 @@
     text-decoration: none;
     line-height: 1.5;
     border: 1px solid var(--btn-border);
+    transition-duration: 0.25s;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+    border: 1px solid var(--btn-hover);
+    transition-duration: 0.25s;
 }
 
 .introduction-btn-container {
@@ -152,10 +161,6 @@
     padding-top: 3rem;
 }
 
-.browsing-container {}
-
-.app-content {}
-
 .app-title {
     color: white;
     font-size: 2rem;
@@ -186,6 +191,12 @@
     text-align: right;
     color: white;
     text-decoration: none;
+    transition-duration: 0.25s;
+}
+
+.app-button:hover {
+    background-color: var(--app-button-hover);
+    transition-duration: 0.25s;
 }
 
 .app-span-1 {
