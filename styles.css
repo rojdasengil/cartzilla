@@ -19,9 +19,10 @@
     --app-button-hover: #212835;
     --courier-bg: rgba(105, 179, 254, .09);
     --partner-bg: rgba(254, 165, 105, .09);
-    --customer-reviwers: #f6f9fc;
-    --reviwers-name-title: #373f50;
-    --reviwers-name-paragraph: #7d879c;
+    --customer-reviews: #f6f9fc;
+    --reviews-name-title: #373f50;
+    --reviews-name-paragraph: #7d879c;
+    --star-color: #fea569;
 }
 
 ::selection {
@@ -270,7 +271,6 @@
     width: auto;
 }
 
-
 .restaurants-container {
     padding: 40px 0;
     flex-wrap: wrap;
@@ -290,46 +290,53 @@
     width: 150px;
 }
 
-.customer-reviwers {
+.customer-reviews {
     width: 100%;
-    height: 400px;
-    background-color: var(--customer-reviwers);
-    padding-top: 80px;
+    background-color: var(--customer-reviews);
+    padding: 80px 0;
 }
 
-.reviwers-paragraph {
+.reviewer-text-wrapper {
     background-color: white;
+    padding: 20px;
     margin-top: 35px;
-    padding: 10px;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
     border-radius: 10px;
 }
 
-.reviwers-img {
+.review-stars {
+    color: var(--star-color);
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+}
+
+.review-paragraph {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.reviews-img-container {
     padding-top: 1.5rem
 }
 
-.reviwers-img > img {
+.reviews-img-container > img {
     width: 50px;
-    height: 50px;
     border-radius: 100%;
 }
 
-.reviwers-name {
-    padding: 0px 0px 0px 16px;
+.reviews-name {
+    padding-left: 16px;
 }
 
-.reviwers-name-title {
+.reviews-name-title {
     font-size: .875rem;
-    color: var(--reviwers-name-title);
+    color: var(--reviews-name-title);
     font-weight: 500;
     line-height: 1.2;
 }
 
-.reviwers-name-paragraph {
-    color: var(--reviwers-name-paragraph);
+.reviews-name-paragraph {
+    color: var(--reviews-name-paragraph);
     font-size: .8125rem;
     font-weight: 400;
     line-height: 1.2;
