@@ -23,6 +23,7 @@
     --reviews-name-title: #373f50;
     --reviews-name-paragraph: #7d879c;
     --star-color: #fea569;
+    --footer-bg: #2b3445;
 }
 
 ::selection {
@@ -341,4 +342,71 @@
     font-weight: 400;
     line-height: 1.2;
     opacity: .75;
+}
+
+
+.footer {
+    background-color: var(--footer-bg);
+    padding-top: 48px;
+}
+
+.footer-container {
+    margin-left: 149px ;
+    margin-right: 149px;
+
+}
+
+.footer-content {
+    width: 287px;
+    height: 149px;
+    text-align: left;
+}
+
+.footer-content > h3 {
+    color: white;
+    margin-bottom: 18px;
+    font-size: 1.0625rem;
+    font-weight: 500;
+}
+
+.footer-content > img {
+    width: 117px;
+    height: 28px;
+    margin-bottom: 24px;
+}
+
+.footer-content > ul {
+    list-style-type: none;
+}
+
+.footer-content > ul > li {
+    color: #ffffffa6;
+    margin-bottom: 10px;
+}
+
+.footer-content-a {
+    padding: 6.8px 8px;
+    width: 146px;
+    height: 35px;
+    background-color: var(--footer-bg);
+    text-decoration: none ;
+    color:white;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.footer-content-a:hover {
+    background-color: white;
+    color: black;
+}
+
+.footer-app {
+    border: 1px solid gray;
+}
+
+.footer-cizgi {
+    margin: 8px 0px 16px ;
+    border-top: 1px solid  #ffffff1f;;
+    opacity: 1;
+    
 }
