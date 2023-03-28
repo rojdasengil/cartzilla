@@ -34,6 +34,8 @@
     --star-color: #fea569;
     --footer-bg: #2b3445;
     --footer-link: #ffffffa6;
+    --header-link: #4b566b;
+    --header-link-border: #e3e9ef;
 }
 
 ::selection {
