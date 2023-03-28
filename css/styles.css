@@ -5,6 +5,7 @@
 @import "introduction.css";
 @import "popular-restaurants.css";
 @import "trending-foods.css";
+@import "header.css";
 
 * {
     padding: 0px;
