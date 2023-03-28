@@ -1,3 +1,11 @@
+@import "become.css";
+@import "browsing.css";
+@import "customer-reviews.css";
+@import "footer.css";
+@import "introduction.css";
+@import "popular-restaurants.css";
+@import "trending-foods.css";
+
 * {
     padding: 0px;
     margin: 0px;
@@ -84,36 +92,6 @@
     box-shadow: 0px 2px 19px -10px rgba(125,125,125,1);
 }
 
-.introduction {
-    width: 100%;
-    height: 632.5px;
-    background-image: url('./img/hero-bg.jpg');
-    background-size: cover;
-    background-position: left;
-    display: flex;
-    justify-content: center;
-}
-
-.introduction-content {
-    text-align: center;
-    color: white;
-    margin-top: 10rem;
-}
-
-.introduction-content > h5 {
-    font-weight: 300;
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
-}
-
-.introduction-content > h1 {
-    font-size: 2.5rem;
-}
-
-.introduction-content > h1 > span {
-    color: var(--link-color)
-}
-
 .btn {
     padding: .625rem 1.375rem;
     font-size: .9375rem;
@@ -133,61 +111,6 @@
     background-color: var(--btn-hover);
     border: 1px solid var(--btn-hover);
     transition-duration: 0.25s;
-}
-
-.introduction-btn-container {
-    margin-top: 40px;
-}
-
-.foods-container {
-    margin-top: 40px;
-    flex-wrap: wrap;
-    row-gap: 1.875rem;
-}
-
-.food-card {
-    border-radius: .4375rem;
-    cursor: pointer;
-}
-
-.food-card > img {
-    width: 390px;
-    height: 279.5px;
-    border-top-left-radius: .4375rem;
-    border-top-right-radius: .4375rem;
-}
-
-.food-card-content {
-    padding: 2rem 0;
-}
-
-.food-name {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: var(--title-color);
-}
-
-.browsing {
-    width: 100%;
-    background-color: var(--browsing-bg);
-    padding-top: 3rem;
-}
-
-.app-title {
-    color: white;
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 1.2;
-    text-align: left;
-    margin-bottom: 16px;
-}
-
-.app-paragraph {
-    color: white;
-    opacity: .7;
-    text-align: left;
-    line-height: 1.5;
-    margin-bottom: 30px;
 }
 
 .app-buttons-container {
@@ -217,14 +140,6 @@
     margin-bottom: -0.125rem;
 }
 
-.app-img {
-    padding-left: 130px;
-}
-
-.app-img > img {
-    width: 311px;
-}
-
 .app-icon {
     background-size: 20px;
     background-repeat: no-repeat;
@@ -237,194 +152,4 @@
 
 .apple-icon {
     background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMDUgMzA1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMDUgMzA1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+CjxnIGlkPSJYTUxJRF8yMjhfIj4KCTxwYXRoIGlkPSJYTUxJRF8yMjlfIiBkPSJNNDAuNzM4LDExMi4xMTljLTI1Ljc4NSw0NC43NDUtOS4zOTMsMTEyLjY0OCwxOS4xMjEsMTUzLjgyQzc0LjA5MiwyODYuNTIzLDg4LjUwMiwzMDUsMTA4LjIzOSwzMDUgICBjMC4zNzIsMCwwLjc0NS0wLjAwNywxLjEyNy0wLjAyMmM5LjI3My0wLjM3LDE1Ljk3NC0zLjIyNSwyMi40NTMtNS45ODRjNy4yNzQtMy4xLDE0Ljc5Ny02LjMwNSwyNi41OTctNi4zMDUgICBjMTEuMjI2LDAsMTguMzksMy4xMDEsMjUuMzE4LDYuMDk5YzYuODI4LDIuOTU0LDEzLjg2MSw2LjAxLDI0LjI1Myw1LjgxNWMyMi4yMzItMC40MTQsMzUuODgyLTIwLjM1Miw0Ny45MjUtMzcuOTQxICAgYzEyLjU2Ny0xOC4zNjUsMTguODcxLTM2LjE5NiwyMC45OTgtNDMuMDFsMC4wODYtMC4yNzFjMC40MDUtMS4yMTEtMC4xNjctMi41MzMtMS4zMjgtMy4wNjZjLTAuMDMyLTAuMDE1LTAuMTUtMC4wNjQtMC4xODMtMC4wNzggICBjLTMuOTE1LTEuNjAxLTM4LjI1Ny0xNi44MzYtMzguNjE4LTU4LjM2Yy0wLjMzNS0zMy43MzYsMjUuNzYzLTUxLjYwMSwzMC45OTctNTQuODM5bDAuMjQ0LTAuMTUyICAgYzAuNTY3LTAuMzY1LDAuOTYyLTAuOTQ0LDEuMDk2LTEuNjA2YzAuMTM0LTAuNjYxLTAuMDA2LTEuMzQ5LTAuMzg2LTEuOTA1Yy0xOC4wMTQtMjYuMzYyLTQ1LjYyNC0zMC4zMzUtNTYuNzQtMzAuODEzICAgYy0xLjYxMy0wLjE2MS0zLjI3OC0wLjI0Mi00Ljk1LTAuMjQyYy0xMy4wNTYsMC0yNS41NjMsNC45MzEtMzUuNjExLDguODkzYy02LjkzNiwyLjczNS0xMi45MjcsNS4wOTctMTcuMDU5LDUuMDk3ICAgYy00LjY0MywwLTEwLjY2OC0yLjM5MS0xNy42NDUtNS4xNTljLTkuMzMtMy43MDMtMTkuOTA1LTcuODk5LTMxLjEtNy44OTljLTAuMjY3LDAtMC41MywwLjAwMy0wLjc4OSwwLjAwOCAgIEM3OC44OTQsNzMuNjQzLDU0LjI5OCw4OC41MzUsNDAuNzM4LDExMi4xMTl6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8cGF0aCBpZD0iWE1MSURfMjMwXyIgZD0iTTIxMi4xMDEsMC4wMDJjLTE1Ljc2MywwLjY0Mi0zNC42NzIsMTAuMzQ1LTQ1Ljk3NCwyMy41ODNjLTkuNjA1LDExLjEyNy0xOC45ODgsMjkuNjc5LTE2LjUxNiw0OC4zNzkgICBjMC4xNTUsMS4xNywxLjEwNywyLjA3MywyLjI4NCwyLjE2NGMxLjA2NCwwLjA4MywyLjE1LDAuMTI1LDMuMjMyLDAuMTI2YzE1LjQxMywwLDMyLjA0LTguNTI3LDQzLjM5NS0yMi4yNTcgICBjMTEuOTUxLTE0LjQ5OCwxNy45OTQtMzMuMTA0LDE2LjE2Ni00OS43N0MyMTQuNTQ0LDAuOTIxLDIxMy4zOTUtMC4wNDksMjEyLjEwMSwwLjAwMnoiIGZpbGw9IiNGRkZGRkYiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
-}
-
-.become {
-    padding: 100px 0;
-}
-
-.become-img {
-    width: 272px;
-    height: 350px;
-}
-
-.become-courier {
-    width: 600px;
-    background-color: var(--courier-bg);
-    border-radius: 8px;
-}
-
-.become-partner {
-    width: 600px;
-    background-color: var(--partner-bg);
-    border-radius: 8px;
-}
-
-.become-content {
-    margin-left: 3rem;
-}
-
-.become-content > .section-description {
-    margin-bottom: 2rem;
-}
-
-.become-content > .btn {
-    display: block;
-    width: auto;
-}
-
-.restaurants-container {
-    padding: 40px 0;
-    flex-wrap: wrap;
-    row-gap: 1.875rem;
-}
-
-.restaurant-img-container {
-    width: 285px;
-    display: flex;
-    justify-content: center;
-    border-radius: .4375rem;
-    cursor: pointer;
-    padding: 2rem 0;
-}
-
-.restaurant-img-container > img {
-    width: 150px;
-}
-
-.customer-reviews {
-    width: 100%;
-    background-color: var(--customer-reviews);
-    padding: 80px 0;
-}
-
-.reviewer-text-wrapper {
-    background-color: white;
-    padding: 20px;
-    margin-top: 35px;
-    border-radius: 10px;
-}
-
-.review-stars {
-    color: var(--star-color);
-    margin-bottom: 0.5rem;
-    font-size: 18px;
-}
-
-.review-paragraph {
-    font-size: 0.9rem;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-.reviews-img-container {
-    padding-top: 1.5rem
-}
-
-.reviews-img-container > img {
-    width: 50px;
-    border-radius: 100%;
-}
-
-.reviews-name {
-    padding-left: 16px;
-}
-
-.reviews-name-title {
-    font-size: .875rem;
-    color: var(--reviews-name-title);
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-.reviews-name-paragraph {
-    color: var(--reviews-name-paragraph);
-    font-size: .8125rem;
-    font-weight: 400;
-    line-height: 1.2;
-    opacity: .75;
-}
-
-.footer {
-    background-color: var(--footer-bg);
-    padding: 48px 0;
-}
-
-.footer-content {
-    text-align: left;
-}
-
-.footer-content > h3 {
-    color: white;
-    margin-bottom: 18px;
-    font-size: 1.0625rem;
-    font-weight: 500;
-}
-
-.footer-content > img {
-    width: 117px;
-    height: 28px;
-    margin-bottom: 24px;
-}
-
-.footer-content > ul {
-    list-style-type: none;
-}
-
-.footer-content > ul > li {
-    color: #ffffffa6;
-    margin-bottom: 10px;
-}
-
-.footer-content-btn {
-    padding: 6.8px 20px;
-    background-color: var(--footer-bg);
-    text-decoration: none ;
-    color:white;
-    border: 1px solid gray;
-    border-radius: 5px;
-}
-
-.footer-content-btn:hover {
-    background-color: white;
-    color: black;
-}
-
-.footer-app {
-    border: 1px solid gray;
-}
-
-.footer-end-p {
-    color: var(--description-color);
-    font-weight: 500;
-    line-height: 1.5;
-    font-size: .75rem;
-}
-
-.brand-name {
-    text-decoration: none;
-    color: var(--description-color);
-}
-
-.footer-end-copyright {
-    color: var(--description-color);
-    font-weight: 400;
-    font-size: 1rem;
-}
-
-.footer-end-copyright > ul {
-    list-style-type: none;
-    display: flex;
-}
-
-.footer-end-copyright > ul > li {
-    margin-left: 30px;
-    font-size: 14px;
-    color: var(--footer-link);
-}
-
-.footer-end {
-    margin-top: 30px;
-    padding-top: 30px;
-    border-top: 1px solid var(--description-color);
 }

@@ -1,0 +1,30 @@
+.browsing {
+    width: 100%;
+    background-color: var(--browsing-bg);
+    padding-top: 3rem;
+}
+
+.app-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.app-paragraph {
+    color: white;
+    opacity: .7;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.app-img {
+    padding-left: 130px;
+}
+
+.app-img > img {
+    width: 311px;
+}

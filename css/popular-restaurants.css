@@ -1,0 +1,18 @@
+.restaurants-container {
+    padding: 40px 0;
+    flex-wrap: wrap;
+    row-gap: 1.875rem;
+}
+
+.restaurant-img-container {
+    width: 285px;
+    display: flex;
+    justify-content: center;
+    border-radius: .4375rem;
+    cursor: pointer;
+    padding: 2rem 0;
+}
+
+.restaurant-img-container > img {
+    width: 150px;
+}

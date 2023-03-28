@@ -1,0 +1,33 @@
+.become {
+    padding: 100px 0;
+}
+
+.become-img {
+    width: 272px;
+    height: 350px;
+}
+
+.become-courier {
+    width: 600px;
+    background-color: var(--courier-bg);
+    border-radius: 8px;
+}
+
+.become-partner {
+    width: 600px;
+    background-color: var(--partner-bg);
+    border-radius: 8px;
+}
+
+.become-content {
+    margin-left: 3rem;
+}
+
+.become-content > .section-description {
+    margin-bottom: 2rem;
+}
+
+.become-content > .btn {
+    display: block;
+    width: auto;
+}
